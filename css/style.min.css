@@ -904,8 +904,8 @@ button[class*=-dark]:hover {
     transition: var(--bs-transition);
     background-color: var(--bs-primary);
     border-radius: var(--bs-border-radius-pill);
-    -webkit-box-shadow: 0 8px 20px 0 rgba(43, 171, 160, 0.3);
-    box-shadow: 0 8px 20px 0 rgba(43, 171, 160, 0.3);
+    -webkit-box-shadow: 0 8px 20px 0 rgba(252, 191, 60, 0.39);
+    box-shadow: 0 8px 20px 0 #fcbf3c88;
 }
 
 .btn-link:hover {
