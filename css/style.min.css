@@ -18,11 +18,11 @@
     --bs-primary-rgb: 38, 171, 163;
     --bs-secondary-rgb: 247, 171, 30;
     --bs-dark-rgb: 41, 48, 57;
-    --bs-primary-bg-subtle: #F4FCFA;
+    --bs-primary-bg-subtle: #fcc03c;
     --bs-secondary-bg-subtle: #FEF3DE;
     --bs-link-color: var(--bs-primary);
     --bs-link-color-rgb: var(--bs-primary-rgb);
-    --bs-link-hover-color: #00CFC3;
+    --bs-link-hover-color: #cfb000;
     --bs-link-hover-color-rgb: 0, 207, 195;
     --bs-highlight-bg: var(--bs-primary);
     --bs-border-width: 1px;
@@ -241,9 +241,11 @@ mark {
     background-color: var(--bs-primary-bg-subtle);
 }
 
+
 .bg_primary_light[class*=shape] {
-    background-color: #C1E3DE;
+    background-color: #be1f31;
 }
+
 
 .bg_secondary_light {
     background-color: var(--bs-secondary-bg-subtle);
@@ -864,6 +866,7 @@ button[class*=-dark]:hover {
     display: inline-flex;
     text-decoration: none;
     font-size: var(--bs-body-font-size);
+    color:var(--bs-secondary);
 }
 
 .btn-link .btn_text {
@@ -1032,13 +1035,13 @@ button[class*=-dark]:hover {
 }
 
 .video_play_btn:hover {
-    -webkit-box-shadow: 10px 20px 40px 0px rgba(244, 227, 199, 0.31), 0 0 0 12px rgba(247, 171, 30, 0.6);
-    box-shadow: 10px 20px 40px 0px rgba(244, 227, 199, 0.31), 0 0 0 12px rgba(247, 171, 30, 0.6);
+    -webkit-box-shadow: 10px 20px 40px 0px rgba(244, 227, 199, 0.31), 0 0 0 12px rgba(247, 30, 48, 0.6);
+    box-shadow: 10px 20px 40px 0px rgba(244, 227, 199, 0.31), 0 0 0 12px rgba(247, 30, 48, 0.6);
 }
 
 .video_play_btn i {
     margin: 2px 0 0 4px;
-    text-shadow: 8px 8px 30px rgba(247, 171, 30, 0.6);
+    text-shadow: 8px 8px 30px rgba(247, 30, 48, 0.6);
 }
 
 .section_heading {
@@ -1306,7 +1309,7 @@ button[class*=-dark]:hover {
     content: "";
     z-index: -1;
     position: absolute;
-    background-color: var(--bs-secondary-bg-subtle);
+    background-color: var(--bs-secondary);
 }
 
 .images_group_widget:before {
