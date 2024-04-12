@@ -47,7 +47,9 @@
                   <div class="col-lg-3 col-5">
                      <ul class="header_btns_group unordered_list justify-content-end">
                         <li><button class="mobile_menu_btn" type="button" data-bs-toggle="collapse" data-bs-target="#main_menu_dropdown" aria-expanded="false" aria-label="Toggle navigation"><i class="far fa-bars"></i></button></li>
-                        <li><a class="btn_hotline" href="tel:+8801680636189"><span class="btn_icon"><i class="fa-solid fa-phone"></i> </span><span class="btn_text">+880-1680-6361-89</span></a></li>
+                        <li><a class="btn_hotline" href="tel:+8801680636189"><span class="btn_icon"><i class="fa-solid fa-clock-three-thirty"></i> </span><span class="btn_text" id="datetime" hx-get="http://worldtimeapi.org/api/timezone/Africa/Luanda" hx-trigger="load" hx-swap="outerHTML">
+                        
+                      </span></a></li>
                      </ul>
                   </div>
                </div>
@@ -102,7 +104,7 @@
                <div class="container">
                   <div class="section_heading text-center">
                      <h2 class="section_heading_text">O QUE FAZEMOS? </h2>
-                     <p class="section_heading_description mb-0" style="width:auto;margin:0;padding:0">A CNIAE promove relações económicas e comerciais 
+                     <p  style="width:auto;margin:0;padding:0">A CNIAE promove relações económicas e comerciais 
                       entre empresas, empresários e instituições de Angola 
                       e Espanha, assentes no interesse mútuo.</p>
                   </div>
@@ -631,10 +633,16 @@
          </footer>
       </div>
       <script src="js/jquery.min.js"></script><script src="js/popper.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/bootstrap-dropdown-ml-hack.min.js"></script><script src="js/cursor.min.js"></script><script src="js/slick.min.js"></script><script src="js/magnific-popup.min.js"></script><script src="js/appear.min.js"></script><script src="js/odometer.min.js"></script><script src="js/main.min.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8CZB4YJTLB"></script><script>window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         
-         gtag('config', 'G-8CZB4YJTLB');
+              function updateTime(response) {
+            // Parse the JSON response
+            var data = JSON.parse(response);
+
+            // Extract the date and time
+            var datetime = data.datetime;
+
+            // Update the content of the datetime element
+            document.getElementById('datetime').innerText = datetime;
+        }
       </script>
    </body>
 </html>

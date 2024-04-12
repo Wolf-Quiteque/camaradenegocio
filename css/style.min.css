@@ -13,7 +13,7 @@
     --bs-body-color-rgb: 81, 86, 93;
     --bs-transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
     --bs-primary: #171f39;
-    --bs-secondary: #be1f31 ;
+    --bs-secondary: #fcc03c ;
     --bs-dark: #293039;
     --bs-primary-rgb: 38, 171, 163;
     --bs-secondary-rgb: 247, 171, 30;
@@ -2190,13 +2190,15 @@ button[class*=-dark]:hover {
 .hero_image_wrap:before {
     top: 0;
     left: 0;
-    background-color: var(--bs-secondary-bg-subtle);
+    background-color: #fcc03c ;
+
 }
 
 .hero_image_wrap:after {
     right: 0;
     bottom: 0;
-    background-color: #C1E3DE;
+    
+    background-color: #be1f31 ;
 }
 
 .hero_image_wrap img {
